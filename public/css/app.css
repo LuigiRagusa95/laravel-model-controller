@@ -10,6 +10,8 @@ html,
 body {
   width: 100%;
   height: 100%;
+  font-size: 16px;
+  line-height: 1.5rem;
   font-family: sans-serif;
 }
 
@@ -22,4 +24,32 @@ ol {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.movie-card {
+  display: flex;
+  padding: 1rem;
+  color: #333333;
+  flex-direction: column;
+}
+.movie-card > .movie-card-title {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.movie-card > .movie-card-date,
+.movie-card > .movie-card-vote,
+.movie-card > .movie-card-nationality,
+.movie-card > .movie-card-original-title {
+  display: flex;
+  font-size: 0.875rem;
+  align-items: center;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+}
+.movie-card > .movie-card-date > strong,
+.movie-card > .movie-card-vote > strong,
+.movie-card > .movie-card-nationality > strong,
+.movie-card > .movie-card-original-title > strong {
+  margin-right: 0.25rem;
 }
